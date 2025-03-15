@@ -1,4 +1,4 @@
-remote: upstream
-target-branch: master
+remote: origin
+target-branch: dev
 chart-dirs:
   - charts
