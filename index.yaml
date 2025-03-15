@@ -128,6 +128,18 @@ entries:
   harvester-node-manager:
   - apiVersion: v2
     appVersion: v1.5.0-dev.0
+    created: "2025-03-15T10:06:25.911911847Z"
+    description: A Helm chart for Harvester Node Manager
+    digest: 3138fde6e3ab21cae84393c7968f835f8df05e95519bd77ae9cedde84cda70b8
+    maintainers:
+    - name: harvester
+    name: harvester-node-manager
+    type: application
+    urls:
+    - https://github.com/bk201/charts-1/releases/download/harvester-node-manager-1.5.0-dev.1/harvester-node-manager-1.5.0-dev.1.tgz
+    version: 1.5.0-dev.1
+  - apiVersion: v2
+    appVersion: v1.5.0-dev.0
     created: "2025-03-15T09:53:03.457824684Z"
     description: A Helm chart for Harvester Node Manager
     digest: ce93ef6958f02bf8fd764a95e33311bffa83103a9844f4bf2f02a4107544746d
@@ -139,6 +151,18 @@ entries:
     - https://github.com/bk201/charts-1/releases/download/harvester-node-manager-1.5.0-dev.0/harvester-node-manager-1.5.0-dev.0.tgz
     version: 1.5.0-dev.0
   harvester-pcidevices-controller:
+  - apiVersion: v2
+    appVersion: 1.5.0-dev.1
+    created: "2025-03-15T10:06:25.999692601Z"
+    description: A Helm chart for Harvester PCI devices controller
+    digest: 00138c80c9ef8690560db69d7c9c945b528b0761b57148810c61856136ed929f
+    maintainers:
+    - name: harvester
+    name: harvester-pcidevices-controller
+    type: application
+    urls:
+    - https://github.com/bk201/charts-1/releases/download/harvester-pcidevices-controller-1.5.0-dev.2/harvester-pcidevices-controller-1.5.0-dev.2.tgz
+    version: 1.5.0-dev.2
   - apiVersion: v2
     appVersion: 1.5.0-dev.1
     created: "2025-03-15T09:53:03.549802418Z"
@@ -232,4 +256,4 @@ entries:
     urls:
     - https://github.com/bk201/charts-1/releases/download/vcluster-0.15.2/vcluster-0.15.2.tgz
     version: 0.15.2
-generated: "2025-03-15T09:53:04.113008424Z"
+generated: "2025-03-15T10:06:25.999712679Z"
