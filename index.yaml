@@ -1,0 +1,235 @@
+apiVersion: v1
+entries:
+  harvester-cloud-provider:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Harvester Cloud Provider
+      catalog.cattle.io/kube-version: '>= 1.23.0-0'
+      catalog.cattle.io/namespace: kube-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/rancher-version: '>= 2.7.0-0'
+      catalog.cattle.io/release-name: harvester-cloud-provider
+      catalog.cattle.io/ui-component: harvester-cloud-provider
+      catalog.cattle.io/upstream-version: 0.2.0
+    apiVersion: v2
+    appVersion: v0.2.4
+    created: "2025-03-15T09:53:02.532501899Z"
+    dependencies:
+    - condition: kube-vip.enabled
+      name: kube-vip
+      repository: file://dependency_charts/kube-vip
+      version: 0.6.4
+    description: A Helm chart for Harvester Cloud Provider
+    digest: 5dee90a1117f606932be447634f96cde088fc097d8151eb18b7683f48af34bd6
+    keywords:
+    - infrastructure
+    - harvester
+    maintainers:
+    - name: harvester
+    name: harvester-cloud-provider
+    type: application
+    urls:
+    - https://github.com/bk201/charts-1/releases/download/harvester-cloud-provider-0.2.9/harvester-cloud-provider-0.2.9.tgz
+    version: 0.2.9
+  harvester-csi-driver:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Harvester CSI Driver
+      catalog.cattle.io/kube-version: '>= 1.18.0-0'
+      catalog.cattle.io/namespace: kube-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/rancher-version: '>= 2.6.1-0 < 2.8.0-0'
+      catalog.cattle.io/release-name: harvester-csi-driver
+      catalog.cattle.io/ui-component: harvester-csi-driver
+    apiVersion: v2
+    appVersion: v0.2.2
+    created: "2025-03-15T09:53:02.639594322Z"
+    description: A Helm chart for Harvester CSI driver
+    digest: d64596ab4260ac4873ee83dcbed3b5a170b0d9737ef132b09050132edc0d2fea
+    keywords:
+    - infrastructure
+    - harvester
+    maintainers:
+    - name: harvester
+    name: harvester-csi-driver
+    type: application
+    urls:
+    - https://github.com/bk201/charts-1/releases/download/harvester-csi-driver-0.1.23/harvester-csi-driver-0.1.23.tgz
+    version: 0.1.23
+  harvester-csi-driver-lvm:
+  - apiVersion: v2
+    appVersion: v0.1.2
+    created: "2025-03-15T09:53:02.760194465Z"
+    description: A Helm chart for Harvester LVM CSI Driver
+    digest: 7db139a2b6fe028e122ff4f5dd9d382329b252a6b2d88302bbd1674a2fca87d9
+    maintainers:
+    - name: harvester
+    name: harvester-csi-driver-lvm
+    type: application
+    urls:
+    - https://github.com/bk201/charts-1/releases/download/harvester-csi-driver-lvm-0.1.4/harvester-csi-driver-lvm-0.1.4.tgz
+    version: 0.1.4
+  harvester-load-balancer:
+  - apiVersion: v2
+    appVersion: v1.5.0-dev.0
+    created: "2025-03-15T09:53:02.918527643Z"
+    description: A load balancer implementation for Harvester
+    digest: fbc76b43690a52a2c550cf459c0af478eee1a1539968da97af4c33bd6c33348e
+    home: https://github.com/harvester/harvester-load-balancer
+    maintainers:
+    - name: harvester
+    name: harvester-load-balancer
+    sources:
+    - https://github.com/harvester/harvester-load-balancer
+    type: application
+    urls:
+    - https://github.com/bk201/charts-1/releases/download/harvester-load-balancer-1.5.0-dev.0/harvester-load-balancer-1.5.0-dev.0.tgz
+    version: 1.5.0-dev.0
+  harvester-network-controller:
+  - apiVersion: v2
+    appVersion: v1.5.0-dev.0
+    created: "2025-03-15T09:53:03.029903484Z"
+    description: A Helm chart for Harvester Network Controller
+    digest: 137513f50b58afd4c252ae1ba8833d239a3a5f4f2cdb395f0c01697c443c78ca
+    maintainers:
+    - name: harvester
+    name: harvester-network-controller
+    type: application
+    urls:
+    - https://github.com/bk201/charts-1/releases/download/harvester-network-controller-1.5.0-dev.1/harvester-network-controller-1.5.0-dev.1.tgz
+    version: 1.5.0-dev.1
+  harvester-networkfs-manager:
+  - apiVersion: v2
+    appVersion: v1.5.0-dev.0
+    created: "2025-03-15T09:53:03.130321021Z"
+    description: A Helm chart for Harvester Network Filesystem Manager
+    digest: bdb607d741491ddb6f97ce73b3bba03f769fbe472996ad3b55b8b5637a46e645
+    maintainers:
+    - name: harvester
+    name: harvester-networkfs-manager
+    type: application
+    urls:
+    - https://github.com/bk201/charts-1/releases/download/harvester-networkfs-manager-1.5.0-dev.0/harvester-networkfs-manager-1.5.0-dev.0.tgz
+    version: 1.5.0-dev.0
+  harvester-node-disk-manager:
+  - apiVersion: v2
+    appVersion: v1.5.0-dev.2
+    created: "2025-03-15T09:53:03.231494378Z"
+    description: A Helm chart for Harvester Node Disk Manager
+    digest: 0dcfdbb1173eef14e007102c0bb57dd8493c2aa5084a1bbeb013c9fc2197d426
+    maintainers:
+    - name: harvester
+    name: harvester-node-disk-manager
+    type: application
+    urls:
+    - https://github.com/bk201/charts-1/releases/download/harvester-node-disk-manager-1.5.0-dev.2/harvester-node-disk-manager-1.5.0-dev.2.tgz
+    version: 1.5.0-dev.2
+  harvester-node-manager:
+  - apiVersion: v2
+    appVersion: v1.5.0-dev.0
+    created: "2025-03-15T09:53:03.457824684Z"
+    description: A Helm chart for Harvester Node Manager
+    digest: ce93ef6958f02bf8fd764a95e33311bffa83103a9844f4bf2f02a4107544746d
+    maintainers:
+    - name: harvester
+    name: harvester-node-manager
+    type: application
+    urls:
+    - https://github.com/bk201/charts-1/releases/download/harvester-node-manager-1.5.0-dev.0/harvester-node-manager-1.5.0-dev.0.tgz
+    version: 1.5.0-dev.0
+  harvester-pcidevices-controller:
+  - apiVersion: v2
+    appVersion: 1.5.0-dev.1
+    created: "2025-03-15T09:53:03.549802418Z"
+    description: A Helm chart for Harvester PCI devices controller
+    digest: 2056a459998c78f237b8bfb7ee76abea14215f2ad250b66204501ae8c0b0f1d2
+    maintainers:
+    - name: harvester
+    name: harvester-pcidevices-controller
+    type: application
+    urls:
+    - https://github.com/bk201/charts-1/releases/download/harvester-pcidevices-controller-1.5.0-dev.1/harvester-pcidevices-controller-1.5.0-dev.1.tgz
+    version: 1.5.0-dev.1
+  harvester-seeder:
+  - apiVersion: v2
+    appVersion: v1.5.0-dev.0
+    created: "2025-03-15T09:53:03.66205515Z"
+    description: A Helm chart for Harvester Seeder
+    digest: 86307d9f366d55c5cb1ed2336ca4f81cdbcf2affc55c6f4f0429b75960d636c6
+    maintainers:
+    - name: harvester
+    name: harvester-seeder
+    type: application
+    urls:
+    - https://github.com/bk201/charts-1/releases/download/harvester-seeder-1.5.0-dev.0/harvester-seeder-1.5.0-dev.0.tgz
+    version: 1.5.0-dev.0
+  harvester-vm-dhcp-controller:
+  - apiVersion: v2
+    appVersion: v1.5.0-dev.2
+    created: "2025-03-15T09:53:03.775104423Z"
+    description: A Helm chart for Harvester VM DHCP Controller
+    digest: 0af4e8647aa7f1f5ad7f428d96490e9651452cec3ac2d8d81800aeab5eea78ae
+    maintainers:
+    - name: harvester
+    name: harvester-vm-dhcp-controller
+    type: application
+    urls:
+    - https://github.com/bk201/charts-1/releases/download/harvester-vm-dhcp-controller-1.5.0-dev.2/harvester-vm-dhcp-controller-1.5.0-dev.2.tgz
+    version: 1.5.0-dev.2
+  harvester-vm-import-controller:
+  - apiVersion: v2
+    appVersion: v1.5.0-dev.0
+    created: "2025-03-15T09:53:03.884027643Z"
+    description: A Helm chart for Kubernetes
+    digest: 252346e4d0c9533fa2158b82185951e17e65c3cfd96bc1083ffe1f87deb58052
+    maintainers:
+    - name: harvester
+    name: harvester-vm-import-controller
+    type: application
+    urls:
+    - https://github.com/bk201/charts-1/releases/download/harvester-vm-import-controller-1.5.0-dev.0/harvester-vm-import-controller-1.5.0-dev.0.tgz
+    version: 1.5.0-dev.0
+  nvidia-driver-runtime:
+  - apiVersion: v2
+    appVersion: v1.5.0-dev.0
+    created: "2025-03-15T09:53:03.985066261Z"
+    description: A Helm chart for Kubernetes
+    digest: b4d59fd81061a0e5fa57670a215fc71bb43ba0e8ad5a4a6157713007e760c409
+    maintainers:
+    - name: harvester
+    name: nvidia-driver-runtime
+    type: application
+    urls:
+    - https://github.com/bk201/charts-1/releases/download/nvidia-driver-runtime-1.5.0-dev.0/nvidia-driver-runtime-1.5.0-dev.0.tgz
+    version: 1.5.0-dev.0
+  vcluster:
+  - apiVersion: v2
+    appVersion: 0.15.2
+    created: "2025-03-15T09:53:04.112993717Z"
+    description: vcluster - Virtual Kubernetes Clusters
+    digest: e9f807e105996fd58d74a3401c437edd3fc3c2d2ed0beb8a307b4a06dced78fa
+    home: https://vcluster.com
+    icon: https://static.loft.sh/branding/logos/vcluster/vertical/vcluster_vertical.svg
+    keywords:
+    - developer
+    - development
+    - sharing
+    - share
+    - multi-tenancy
+    - tenancy
+    - cluster
+    - space
+    - namespace
+    - vcluster
+    - vclusters
+    maintainers:
+    - name: LoftLabs
+    name: vcluster
+    sources:
+    - https://github.com/loft-sh/vcluster
+    type: application
+    urls:
+    - https://github.com/bk201/charts-1/releases/download/vcluster-0.15.2/vcluster-0.15.2.tgz
+    version: 0.15.2
+generated: "2025-03-15T09:53:04.113008424Z"
